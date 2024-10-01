@@ -33,7 +33,7 @@ const PORT = process.env.PORT || 3000;
 const user = os.userInfo();
 console.log("hello!!");
 app.get('/', (_req, res) => {
-    res.send(user);
+    res.send(__dirname);
 });
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
