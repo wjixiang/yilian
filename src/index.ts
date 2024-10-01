@@ -9,7 +9,11 @@ const user = os.userInfo()
 console.log("hello!!") 
  
 app.get('/', (_req, res) => {  
-    res.send(__dirname);  
+    res.send("hello");  
+});  
+
+app.get('/vault', (_req, res) => {  
+    res.send("hi");  
 });  
 
 app.listen(PORT, () => {  
